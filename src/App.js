@@ -1,47 +1,32 @@
-import React, { useState } from "react";
+import React from "react";
+import { Container, Row, Col } from "../node_modules/react-bootstrap";
 
-import NewTodo from "./components/NewTodo";
-import TodoList from "./components/TodoList";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+import NavBar from "./components/Navbar";
+import Menu from "./components/Menu";
+import Cards from "./components/Cards";
 
 import "./App.css";
 
-const App = () => {
-  const [todos, setTodos] = useState([]);
-
-  const onNewTodo = (value) => {
-    setTodos([
-      ...todos,
-      {
-        id: new Date().getTime(),
-        title: value,
-        checked: false,
-      },
-    ]);
-  };
-
-  const onToggle = (todo) => {
-    setTodos(
-      todos.map((obj) =>
-        obj.id === todo.id ? { ...obj, checked: !todo.checked } : obj
-      )
-    );
-  };
-
-  const onRemove = (todo) => {
-    setTodos(todos.filter((obj) => obj.id !== todo.id));
-  };
-
-  return (
-    <section id="app" className="container">
-      <header>
-        <h1 className="title">Todo</h1>
-      </header>
-      <section className="main">
-        <NewTodo onNewTodo={onNewTodo} />
-        <TodoList todos={todos} onToggle={onToggle} onRemove={onRemove} />
-      </section>
-    </section>
-  );
-};
+const App = () => (
+  <>
+    <Container>
+      <Row className="mt-1 mb-3">
+        <Col className="col-12 px-0">
+          <NavBar />
+        </Col>
+      </Row>
+      <Row>
+        <Col className="col-3 bg-secondary">
+          <Menu />
+        </Col>
+        <Col className="col-9 bg-info">
+          <Cards />
+        </Col>
+      </Row>
+    </Container>
+  </>
+);
 
 export default App;
