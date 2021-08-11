@@ -12,16 +12,19 @@ import "./App.css";
 const App = () => (
   <Container className="px-0">
     <Row className="mt-2 mb-2">
+      {/* Navbar */}
       <Col className="col-12">
         <NavBar />
       </Col>
     </Row>
     <Row className="background-banner pt-2 mx-0">
+      {/* Menu Lateral */}
       <Col className="col-3">
         <Card>
           <Menu />
         </Card>
       </Col>
+      {/* Corpo do Dashboard */}
       <Col className="col-9">
         <Card>
           <DashBody />

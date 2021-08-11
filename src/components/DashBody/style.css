@@ -1,8 +1,23 @@
+@import '../../App.css';
+
 .breadcrumb-item + .breadcrumb-item::before {
   content: ">";
+}
+
+.container-fluid {
+  background-color: gainsboro;
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+.h5 {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+ol.breadcrumb {
+  margin-bottom: 0.25rem;
 }
