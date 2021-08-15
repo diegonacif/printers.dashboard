@@ -1,0 +1,14 @@
+li.list-group-item {
+  text-align: center;
+  vertical-align: middle;
+}
+
+li.list-group-item p{
+  margin: 0;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.filters-logo {
+  min-height: 8rem;
+}
