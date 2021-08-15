@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/printers.dashboard/static/css/main.40e5129d.chunk.css",
+    "main.css": "/printers.dashboard/static/css/main.8adf80c0.chunk.css",
     "main.js": "/printers.dashboard/static/js/main.4006888d.chunk.js",
     "main.js.map": "/printers.dashboard/static/js/main.4006888d.chunk.js.map",
     "runtime-main.js": "/printers.dashboard/static/js/runtime-main.b5529c5c.js",
@@ -12,7 +12,7 @@
     "static/js/3.70239f17.chunk.js.map": "/printers.dashboard/static/js/3.70239f17.chunk.js.map",
     "index.html": "/printers.dashboard/index.html",
     "static/css/2.4be38407.chunk.css.map": "/printers.dashboard/static/css/2.4be38407.chunk.css.map",
-    "static/css/main.40e5129d.chunk.css.map": "/printers.dashboard/static/css/main.40e5129d.chunk.css.map",
+    "static/css/main.8adf80c0.chunk.css.map": "/printers.dashboard/static/css/main.8adf80c0.chunk.css.map",
     "static/js/2.90308b43.chunk.js.LICENSE.txt": "/printers.dashboard/static/js/2.90308b43.chunk.js.LICENSE.txt",
     "static/media/total-ink-logo.dde0b511.png": "/printers.dashboard/static/media/total-ink-logo.dde0b511.png"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.b5529c5c.js",
     "static/css/2.4be38407.chunk.css",
     "static/js/2.90308b43.chunk.js",
-    "static/css/main.40e5129d.chunk.css",
+    "static/css/main.8adf80c0.chunk.css",
     "static/js/main.4006888d.chunk.js"
   ]
 }
