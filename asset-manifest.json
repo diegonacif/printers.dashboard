@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/printers.dashboard/static/css/main.8adf80c0.chunk.css",
-    "main.js": "/printers.dashboard/static/js/main.976c61cb.chunk.js",
-    "main.js.map": "/printers.dashboard/static/js/main.976c61cb.chunk.js.map",
-    "runtime-main.js": "/printers.dashboard/static/js/runtime-main.b48cd399.js",
-    "runtime-main.js.map": "/printers.dashboard/static/js/runtime-main.b48cd399.js.map",
+    "main.css": "/printers.dashboard/static/css/main.3ca3c92a.chunk.css",
+    "main.js": "/printers.dashboard/static/js/main.3f9048dd.chunk.js",
+    "main.js.map": "/printers.dashboard/static/js/main.3f9048dd.chunk.js.map",
+    "runtime-main.js": "/printers.dashboard/static/js/runtime-main.68de43ec.js",
+    "runtime-main.js.map": "/printers.dashboard/static/js/runtime-main.68de43ec.js.map",
     "static/css/2.4be38407.chunk.css": "/printers.dashboard/static/css/2.4be38407.chunk.css",
-    "static/js/2.4f7a8cf2.chunk.js": "/printers.dashboard/static/js/2.4f7a8cf2.chunk.js",
-    "static/js/2.4f7a8cf2.chunk.js.map": "/printers.dashboard/static/js/2.4f7a8cf2.chunk.js.map",
-    "static/js/3.653feb8c.chunk.js": "/printers.dashboard/static/js/3.653feb8c.chunk.js",
-    "static/js/3.653feb8c.chunk.js.map": "/printers.dashboard/static/js/3.653feb8c.chunk.js.map",
+    "static/js/2.247cbc9e.chunk.js": "/printers.dashboard/static/js/2.247cbc9e.chunk.js",
+    "static/js/2.247cbc9e.chunk.js.map": "/printers.dashboard/static/js/2.247cbc9e.chunk.js.map",
+    "static/js/3.b548f781.chunk.js": "/printers.dashboard/static/js/3.b548f781.chunk.js",
+    "static/js/3.b548f781.chunk.js.map": "/printers.dashboard/static/js/3.b548f781.chunk.js.map",
     "index.html": "/printers.dashboard/index.html",
     "static/css/2.4be38407.chunk.css.map": "/printers.dashboard/static/css/2.4be38407.chunk.css.map",
-    "static/css/main.8adf80c0.chunk.css.map": "/printers.dashboard/static/css/main.8adf80c0.chunk.css.map",
-    "static/js/2.4f7a8cf2.chunk.js.LICENSE.txt": "/printers.dashboard/static/js/2.4f7a8cf2.chunk.js.LICENSE.txt",
+    "static/css/main.3ca3c92a.chunk.css.map": "/printers.dashboard/static/css/main.3ca3c92a.chunk.css.map",
+    "static/js/2.247cbc9e.chunk.js.LICENSE.txt": "/printers.dashboard/static/js/2.247cbc9e.chunk.js.LICENSE.txt",
     "static/media/total-ink-logo.dde0b511.png": "/printers.dashboard/static/media/total-ink-logo.dde0b511.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b48cd399.js",
+    "static/js/runtime-main.68de43ec.js",
     "static/css/2.4be38407.chunk.css",
-    "static/js/2.4f7a8cf2.chunk.js",
-    "static/css/main.8adf80c0.chunk.css",
-    "static/js/main.976c61cb.chunk.js"
+    "static/js/2.247cbc9e.chunk.js",
+    "static/css/main.3ca3c92a.chunk.css",
+    "static/js/main.3f9048dd.chunk.js"
   ]
 }
