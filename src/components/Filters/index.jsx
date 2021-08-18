@@ -1,102 +1,60 @@
-import React from "react";
-import { Form, Image } from "react-bootstrap";
-// import Select from "react-select";
+import React, { useState } from "react";
+import { Form, Image, Button, Modal } from "react-bootstrap";
 
-import { makeStyles } from "@material-ui/core/styles";
-import TextField from "@material-ui/core/TextField";
 import image from "../../img/total-ink-logo.png";
 import "./styles.css";
 
-// const status = [
-//   { value: "estoque", label: "Estoque" },
-//   { value: "cliente", label: "Em cliente" },
-//   { value: "manutencao", label: "Manutenção" },
-//   { value: "descartada", label: "Descartada" },
-// ];
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    "& > *": {
-      margin: theme.spacing(1),
-      width: "93%",
-    },
-  },
-
-  label: {
-    backgroundColor: "white",
-    top: "-3px",
-    paddingInline: "4px",
-  },
-}));
-
 const Filters = () => {
-  const classes = useStyles();
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   return (
     <>
-      <Image src={image} className="w-25 mx-auto pt-3 pb-3" />
+      <Button variant="success" className="mx-auto mb-3" onClick={handleShow}>
+        Filtros
+      </Button>
 
-      <Form className={classes.root} noValidate autoComplete="off">
-        <TextField
-          InputLabelProps={{
-            classes: {
-              root: classes.label,
-            },
-          }}
-          id="outlined-basic"
-          label="Cliente"
-          variant="outlined"
-          size="small"
-          notched="true"
-        />
-        <TextField
-          InputLabelProps={{
-            classes: {
-              root: classes.label,
-            },
-          }}
-          id="outlined-basic"
-          label="Equipamentos"
-          variant="outlined"
-          size="small"
-        />
-        <TextField
-          InputLabelProps={{
-            classes: {
-              root: classes.label,
-            },
-          }}
-          id="outlined-basic"
-          label="Status"
-          variant="outlined"
-          size="small"
-        />
-        <TextField
-          InputLabelProps={{
-            classes: {
-              root: classes.label,
-              shrink: true,
-            },
-          }}
-          id="outlined-basic"
-          label="Data Inicial"
-          variant="outlined"
-          size="small"
-          type="text"
-          defaultValue=""
-        />
-        <TextField
-          InputLabelProps={{
-            classes: {
-              root: classes.label,
-            },
-          }}
-          id="outlined-basic"
-          label="Data Final"
-          variant="outlined"
-          size="small"
-        />
-      </Form>
+      <Modal show={show} onHide={handleClose}>
+        <Image src={image} className="w-25 mx-auto mt-3 mb-4" />
+
+        <Form className="col-11 mx-auto pb-4">
+          {/* Form Cliente */}
+          <Form.Group className="mb-3" controlId="formFiltroCliente">
+            <Form.Label className="mb-0">Cliente</Form.Label>
+            <Form.Control type="text" placeholder="Digite um cliente" />
+          </Form.Group>
+
+          {/* Form Equipamentos */}
+          <Form.Group className="mb-3" controlId="formFiltroEquipamentos">
+            <Form.Label className="mb-0">Equipamentos</Form.Label>
+            <Form.Control type="text" placeholder="Digite um equipamento" />
+          </Form.Group>
+
+          {/* Form Status */}
+          <Form.Label className="mb-0">Status</Form.Label>
+          <select className="form-control mb-3" id="formFiltroStatus">
+            <option hidden>Selecione um status</option>
+            <option value="1">Estoque</option>
+            <option value="2">Cliente</option>
+            <option value="3">Manutenção</option>
+            <option value="4">Descartado</option>
+          </select>
+
+          {/* Form Data Inicial */}
+          <Form.Group className="mb-3" controlId="formFiltroDataInicial">
+            <Form.Label className="mb-0">Data Inicial</Form.Label>
+            <Form.Control type="date" />
+          </Form.Group>
+
+          {/* Form Data Final */}
+          <Form.Group className="mb-3" controlId="formFiltroDataFinal">
+            <Form.Label className="mb-0">Data Final</Form.Label>
+            <Form.Control type="date" />
+          </Form.Group>
+        </Form>
+      </Modal>
     </>
   );
 };

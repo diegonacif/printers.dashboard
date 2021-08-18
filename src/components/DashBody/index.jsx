@@ -8,12 +8,14 @@ import {
   Card,
   Table,
 } from "react-bootstrap";
+
+import Filters from "../Filters";
 import "./style.css";
 
 const DashBody = () => (
   <Container fluid className="px-2 pt-2 pb-3">
     {/* Breadcrumb */}
-    <Row>
+    <Row className="mb-3">
       <Col className="col-12">
         <Breadcrumb>
           <BreadcrumbItem active>Home</BreadcrumbItem>
@@ -24,32 +26,32 @@ const DashBody = () => (
     </Row>
     {/* Top-Cards */}
     <Row className="mb-4">
-      <Col className="col-sm-12 col-md-6 col-lg-3">
-        <Card className="top-card rounded-2">
-          <Card.Body className="px-sm-3">
-            <Card.Title className="text-muted">TODAYS MONEY 1</Card.Title>
+      <Col className="col-12 col-md-6 col-lg-3 mb-2">
+        <Card className="top-card rounded-2 mx-5">
+          <Card.Body className="px-3">
+            <Card.Title className="text-muted">Clientes</Card.Title>
             <Card.Text className="card-values">$24,000</Card.Text>
           </Card.Body>
         </Card>
       </Col>
-      <Col className="col-sm-12 col-md-6 col-lg-3">
-        <Card className="top-card rounded-2">
+      <Col className="col-12 col-md-6 col-lg-3 mb-2">
+        <Card className="top-card rounded-2 mx-5">
           <Card.Body className="px-sm-3">
-            <Card.Title className="text-muted">TODAYS MONEY 2</Card.Title>
+            <Card.Title className="text-muted">Equipamentos</Card.Title>
             <Card.Text className="card-values">$25,000</Card.Text>
           </Card.Body>
         </Card>
       </Col>
-      <Col className="col-sm-12 col-md-6 col-lg-3">
-        <Card className="top-card rounded-2">
+      <Col className="col-12 col-md-6 col-lg-3 mb-2">
+        <Card className="top-card rounded-2 mx-5">
           <Card.Body className="px-sm-3">
             <Card.Title className="text-muted">TODAYS MONEY 3</Card.Title>
             <Card.Text className="card-values">$26,000</Card.Text>
           </Card.Body>
         </Card>
       </Col>
-      <Col className="col-sm-12 col-md-6 col-lg-3">
-        <Card className="top-card rounded-2">
+      <Col className="col-12 col-md-6 col-lg-3">
+        <Card className="top-card rounded-2 mx-5">
           <Card.Body className="px-sm-3">
             <Card.Title className="text-muted">TODAYS MONEY 4</Card.Title>
             <Card.Text className="card-values">$27,000</Card.Text>
@@ -57,11 +59,18 @@ const DashBody = () => (
         </Card>
       </Col>
     </Row>
+    {/* Topo da tabela e botão Filtros */}
+    <Row>
+      <Col>
+        <h5 className="pt-2 mb-0">Resultados:</h5>
+      </Col>
+      <Col className="text-end">
+        <Filters />
+      </Col>
+    </Row>
     {/* Tabela */}
     <Row>
       <Col>
-        {/* <Card className="px-2 pt-1"> */}
-        <h5>Resultado da busca:</h5>
         <Table hover responsive className="w-12 table-light">
           <thead>
             <tr>
@@ -82,7 +91,7 @@ const DashBody = () => (
               <td>Estoque</td>
               <td>
                 12/07/2021
-                <span className="ms-5">
+                <span className="ms-3">
                   <input type="button" value="..." />
                 </span>
               </td>
@@ -95,7 +104,7 @@ const DashBody = () => (
               <td>Em cliente</td>
               <td>
                 25/02/2020
-                <span className="ms-5">
+                <span className="ms-3">
                   <input type="button" value="..." />
                 </span>
               </td>
@@ -108,7 +117,7 @@ const DashBody = () => (
               <td>Em cliente</td>
               <td>
                 15/03/2021
-                <span className="ms-5">
+                <span className="ms-3">
                   <input type="button" value="..." />
                 </span>
               </td>
@@ -121,7 +130,7 @@ const DashBody = () => (
               <td>Manutenção</td>
               <td>
                 29/07/2021
-                <span className="ms-5">
+                <span className="ms-3">
                   <input type="button" value="..." />
                 </span>
               </td>
@@ -134,7 +143,7 @@ const DashBody = () => (
               <td>Estoque</td>
               <td>
                 12/07/2021
-                <span className="ms-5">
+                <span className="ms-3">
                   <input type="button" value="..." />
                 </span>
               </td>
@@ -147,7 +156,7 @@ const DashBody = () => (
               <td>Em cliente</td>
               <td>
                 25/02/2020
-                <span className="ms-5">
+                <span className="ms-3">
                   <input type="button" value="..." />
                 </span>
               </td>
@@ -160,7 +169,7 @@ const DashBody = () => (
               <td>Em cliente</td>
               <td>
                 15/03/2021
-                <span className="ms-5">
+                <span className="ms-3">
                   <input type="button" value="..." />
                 </span>
               </td>
@@ -173,14 +182,13 @@ const DashBody = () => (
               <td>Manutenção</td>
               <td>
                 29/07/2021
-                <span className="ms-5">
+                <span className="ms-3">
                   <input type="button" value="..." />
                 </span>
               </td>
             </tr>
           </tbody>
         </Table>
-        {/* </Card> */}
       </Col>
     </Row>
   </Container>

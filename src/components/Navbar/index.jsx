@@ -5,7 +5,7 @@ import "./styles.css";
 
 const NavBar = () => (
   <Navbar className="navbar-background rounded-0">
-    <Nav.Item className="fw-bold h4 ps-3 mb-1 pe-3 text-light">
+    <Nav.Item className="fw-bold h6 h4-lg ps-1 mb-1 mx-1 pe-0 text-light">
       Printers Stock
     </Nav.Item>
     <Nav.Link

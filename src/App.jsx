@@ -1,10 +1,10 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 import NavBar from "./components/Navbar";
-import Filters from "./components/Filters";
+// import Filters from "./components/Filters";
 import DashBody from "./components/DashBody";
 
 import "./App.css";
@@ -19,13 +19,13 @@ const App = () => (
     </Row>
     <Row className="background-banner pt-2 mx-0">
       {/* Menu Lateral */}
-      <Col className="col-3">
+      {/* <Col className="col-12 col-sm-7 col-md-6 col-lg-3 mx-md-auto mx-sm-auto">
         <Card>
           <Filters />
         </Card>
-      </Col>
+      </Col> */}
       {/* Corpo do Dashboard */}
-      <Col className="col-9">
+      <Col className="col-12 col-lg-9">
         <DashBody />
       </Col>
     </Row>
